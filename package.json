@@ -14,7 +14,10 @@
     "playground": "concurrently \"npm run build:watch\" \"npm run playground:build\" \"npm run lite\"",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:ci": "jest --runInBand"
+    "test:ci": "jest --runInBand",
+    "clean": "git branch -D gh-pages && git push origin --delete gh-pages",
+    "gh-pages": "git subtree split --prefix demo/dist -b gh-pages",
+    "deploy": "git push -f origin gh-pages:gh-pages"
   },
   "jest": {
     "preset": "jest-preset-angular",
