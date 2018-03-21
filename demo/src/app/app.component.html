@@ -1,0 +1,251 @@
+<app-header></app-header>
+
+<div class="container">
+  <div class="content">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <a href="https://www.npmjs.com/package/angular-switchery-ios" target="_blank" class="btn btn-xl btn-danger">NPM</a>
+        <a href="http://zainzafar90.github.io/angular-switchery-ios" target="_blank" class="btn btn-xl btn-dark ">Github</a>
+      </div>
+      <div class="col-md-12 mt-4">
+
+        <h1>
+          How to use Angular IOS Toggle Switch
+        </h1>
+
+        <p>
+          Toggle Switch for Angular by
+          <a href="https://github.com/zainzafar90" target="_blank">
+            <b>Zain Zafar</b>
+          </a>.
+        </p>
+
+        <br>
+        <br>
+        <h2>Installation</h2>
+
+        <pre data-title="bash">
+            <code class="language-bash" >
+              <span [innerHTML]="code0"></span>
+            </code>
+        </pre>
+
+        <p>
+          and then from your Angular
+          <code class="code">AppModule</code>:
+        </p>
+
+        <pre data-title="typescript">
+          <code class="language-javascript" >
+            <span [innerHTML]="code1"></span>
+          </code>
+      </pre>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content-group-lg">
+
+              <br>
+              <br>
+              <h2>Usage</h2>
+
+
+              <!-- Default Section -->
+              <section>
+
+                <h3>Default</h3>
+
+                <h6>Code </h6>
+
+                <pre data-title="html">
+                  <code class="language-html">
+                    <span [innerHTML]="code2"></span>
+                  </code>
+                </pre>
+
+                <p> Switch Value:
+                  <code class="code"> {{value|json}}</code>
+                </p>
+
+                <h6 class="mb-0">Demo </h6>
+                <ng-switchery [(enable)]="value"></ng-switchery>
+
+                <br>
+                <br>
+              </section>
+              <!--/ Default Section -->
+
+
+              <!-- Switchery Label Section -->
+              <section>
+
+                <h3>Switchery with label</h3>
+
+                <pre data-title="html">
+                    <code class="language-html">
+                      <span [innerHTML]="code3"></span>
+                    </code>
+                </pre>
+
+                <p>
+                  You can add as many switches as you like, as long as their corresponding checkboxes have the same class. Select them and
+                  make new instance of the Switchery class for every of them.
+                </p>
+
+                <h6>Demo </h6>
+
+                <!-- Checked Switch -->
+                <ng-switchery [enable]="true" onLabel="Checked Switch"></ng-switchery>
+
+                <!-- Unchecked Switch -->
+                <ng-switchery [enable]="false" onLabel="Unchecked Switch"></ng-switchery>
+
+                <!-- Checked Disabled -->
+                <ng-switchery [enable]="true" [disabled]="true" onLabel="Checked Disabled"></ng-switchery>
+
+                <!-- Unchecked Disabled -->
+                <ng-switchery [enable]="false" [disabled]="true" onLabel="Unchecked Disabled"></ng-switchery>
+
+                <br>
+                <br>
+              </section>
+              <!--/ Switchery Label Section -->
+
+
+              <!-- Switchery Colors Section -->
+              <section>
+
+                <h3>Switchery colors</h3>
+
+                <h6>Code </h6>
+
+                <pre data-title="html">
+                  <code class="language-html">
+                    <span [innerHTML]="code4"></span>
+                  </code>
+                </pre>
+
+                <p>
+                  You can change the default color of the switch to fit your design perfectly. According to the color system, any of its color
+                  can be applied to the switchery. Custom colors are also supported
+                </p>
+
+                <h6>Demo </h6>
+
+                <ng-switchery [enable]="true" onLabel="Checked in Primary"></ng-switchery>
+                <ng-switchery [enable]="true" onLabel="Checked in Info" color="switchery-info"></ng-switchery>
+                <ng-switchery [enable]="true" onLabel="Checked in Success" color="switchery-success"></ng-switchery>
+                <ng-switchery [enable]="true" onLabel="Checked in Warning" color="switchery-warning"></ng-switchery>
+                <ng-switchery [enable]="true" onLabel="Checked in Danger" color="switchery-danger"></ng-switchery>
+
+                <br>
+                <br>
+              </section>
+              <!--/ Switchery Colors Section -->
+
+
+              <!-- Switchery Sizes Section -->
+              <section>
+
+                <h3>Switchery Sizes</h3>
+
+                <h6>Code </h6>
+
+                <pre data-title="html">
+                  <code class="language-html">
+                    <span [innerHTML]="code5"></span>
+                  </code>
+                </pre>
+
+                <p>
+                  You can choose one of 4 main Switch sizes - large (29px height), default (25px height), small (21px height) and mini (17px
+                  height). Just add proper class to the .checkbox wrapper.
+                </p>
+
+                <h6>Demo </h6>
+                <ng-switchery [enable]="true" onLabel="Large in size" size="switchery-lg"></ng-switchery>
+                <ng-switchery [enable]="true" onLabel="Default in size"></ng-switchery>
+                <ng-switchery [enable]="true" onLabel="Small in size" size="switchery-sm"></ng-switchery>
+                <ng-switchery [enable]="true" onLabel="Mini in size" size="switchery-xs"></ng-switchery>
+
+                <br>
+                <br>
+              </section>
+              <!--/ Switchery Sizes Section -->
+
+
+              <!-- Switchery Double Label Section -->
+              <section>
+
+                <h3>Switchery Double Label</h3>
+
+                <h6>Code </h6>
+
+                <pre data-title="html">
+                  <code class="language-html">
+                    <span [innerHTML]="code6"></span>
+                  </code>
+                </pre>
+
+                <p>
+                  Switchery can be used with single label or with multiple labels. To use, add .switchery-double class to the container. All
+                  sizing options are available for this switchery type as well.
+                </p>
+
+                <h6>Demo </h6>
+                <ng-switchery [enable]="true" onLabel="Option 1" offLabel="Option 2"></ng-switchery>
+
+                <br>
+                <br>
+              </section>
+              <!--/ Switchery Double Label Section -->
+
+
+              <!-- Switchery Sticked Right Section -->
+              <section>
+
+                <h3>Switchery sticked to right</h3>
+
+                <h6>Code </h6>
+
+                <pre data-title="html">
+                  <code class="language-html">
+                    <span [innerHTML]="code7"></span>
+                  </code>
+                </pre>
+
+                <p>
+                  Sometimes it's very useful to have switches on the right side of the container. Just add .display-block class to the
+                  <b>label</b>
+                  for the very right side switcher alignment.
+                </p>
+
+                <h6>Demo </h6>
+
+                <div class="bg-light d-block rounded p-1">
+                  <ng-switchery [enable]="true" onLabel="Option 1" sticked="true"></ng-switchery>
+                </div>
+
+                <br>
+                <br>
+              </section>
+              <!--/ Switchery Sticked Right Section -->
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- ./content -->
+
+    </div>
+    <!-- ./col-md-12 -->
+
+  </div>
+  <!-- ./row -->
+
+</div>
+<!-- ./container -->
+
+<app-footer></app-footer>
