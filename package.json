@@ -15,6 +15,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand",
+    "demo": "cd demo && npm run demo && cd..",
     "clean": "git branch -D gh-pages && git push origin --delete gh-pages",
     "gh-pages": "git subtree split --prefix demo/dist -b gh-pages",
     "deploy": "git push -f origin gh-pages:gh-pages"
