@@ -79,7 +79,7 @@
               <!-- Switchery Label Section -->
               <section>
 
-                <h3>Switchery with label</h3>
+                <h3>Switchery with different states</h3>
 
                 <pre data-title="html">
                     <code class="language-html">
@@ -88,8 +88,8 @@
                 </pre>
 
                 <p>
-                  You can add as many switches as you like, as long as their corresponding checkboxes have the same class. Select them and
-                  make new instance of the Switchery class for every of them.
+                  You can enable/disable states by adding
+                  <code>disabled</code> property and specifying appropriate value to switchery control
                 </p>
 
                 <h6>Demo </h6>
@@ -158,8 +158,10 @@
                 </pre>
 
                 <p>
-                  You can choose one of 4 main Switch sizes - large (29px height), default (25px height), small (21px height) and mini (17px
-                  height). Just add proper class to the .checkbox wrapper.
+                  You can choose one of 4 main Switch sizes - large (
+                  <code>.switchery-lg</code>), default, small (
+                  <code>.switchery-sm</code>) and mini (
+                  <code>.switchery-xs</code>). Just add proper size as input.
                 </p>
 
                 <h6>Demo </h6>
@@ -177,7 +179,7 @@
               <!-- Switchery Double Label Section -->
               <section>
 
-                <h3>Switchery Double Label</h3>
+                <h3>Switchery Label</h3>
 
                 <h6>Code </h6>
 
@@ -188,11 +190,16 @@
                 </pre>
 
                 <p>
-                  Switchery can be used with single label or with multiple labels. To use, add .switchery-double class to the container. All
-                  sizing options are available for this switchery type as well.
+                  Switchery can be used with single label or with multiple labels. For single label use
+                  <code>onLabel="Single Label"</code>, for double specify an extra property
+                  <code>offLabel="Double Label"</code>
                 </p>
 
                 <h6>Demo </h6>
+                <!-- Double Label Switch -->
+                <ng-switchery [enable]="true" onLabel="Single Label Switch"></ng-switchery>
+
+                <!-- Double Label Switch -->
                 <ng-switchery [enable]="true" onLabel="Option 1" offLabel="Option 2"></ng-switchery>
 
                 <br>
@@ -215,9 +222,8 @@
                 </pre>
 
                 <p>
-                  Sometimes it's very useful to have switches on the right side of the container. Just add .display-block class to the
-                  <b>label</b>
-                  for the very right side switcher alignment.
+                  Sometimes it's very useful to have switches on the right side of the container. Just add
+                  <code>[sticked]="true"</code> to the Switchery
                 </p>
 
                 <h6>Demo </h6>

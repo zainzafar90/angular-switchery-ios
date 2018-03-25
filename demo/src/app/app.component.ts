@@ -81,7 +81,10 @@ export class AppComponent {
   &lt;ng-switchery [enable]=&quot;true&quot; onLabel=&quot;Mini in size&quot; size=&quot;switchery-xs&quot;&gt;&lt;/ng-switchery&gt;`;
 
   code6 = `
-  &lt;!-- Specify onLabel &amp; offLabel --&gt;
+  &lt;!-- Specify onLabel  --&gt;
+  &lt;ng-switchery [enable]=&quot;true&quot; onLabel=&quot;Single Label Switch&quot; &gt;&lt;/ng-switchery&gt;
+
+  &lt;!-- Specify both onLabel &amp; offLabel --&gt;
   &lt;ng-switchery [enable]=&quot;true&quot; onLabel=&quot;Option 1&quot; offLabel=&quot;Option 2&quot;&gt;&lt;/ng-switchery&gt;`;
 
   code7 = `
