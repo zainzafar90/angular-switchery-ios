@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "demo": "ng build --prod --aot --base-href https://zainzafar90.github.io/angular-switchery-ios/",
+    "build-prod": "ng build --prod --aot --base-href https://zainzafar90.github.io/angular-switchery-ios/",
     "deploy": "ngh --dir=\"dist\""
   },
   "private": true,

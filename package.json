@@ -15,7 +15,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand",
-    "demo": "cd demo && npm run demo && cd..",
+    "demo": "cd demo && npm run build-prod && cd..",
     "deploy": "ngh --dir=\"demo/dist\""
   },
   "jest": {
