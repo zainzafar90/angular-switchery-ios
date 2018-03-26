@@ -13,7 +13,7 @@ import {
     <div class="checkbox {{customClasses}}" [ngClass]="{disabled: disabled, 'checkbox-double':(offLabel && offLabel.length>0), 'checkbox-right': sticked}">
       <label>
         {{offLabel}}
-        <input type="checkbox" class="switchery" [disabled]="disabled" [ngModel]="enable" (ngModelChange)="change($event)">
+        <input type="checkbox" class="switchery" [disabled]="disabled" [ngModel]="checked" (ngModelChange)="change($event)">
         <span class="switchery {{color}} {{size}}">
           <small></small>
         </span>
@@ -25,7 +25,7 @@ import {
   encapsulation: ViewEncapsulation.None
 })
 export class NgSwitcheryComponent implements OnInit {
-  @Input() enable: boolean;
+  @Input() checked: boolean;
   @Input() disabled?: boolean;
   @Input() onLabel?: string;
   @Input() offLabel?: string;
@@ -41,7 +41,7 @@ export class NgSwitcheryComponent implements OnInit {
   ngOnInit() {}
 
   change(event) {
-    this.enable = event;
+    this.checked = event;
     this.enableChange.emit(event);
   }
 }
