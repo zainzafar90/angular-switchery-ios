@@ -1,27 +1,146 @@
-# DemoAngularSwitcheryIOS
+#  Angular Switchery IOS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
+## Description
 
-## Development server
+This package is an angular based component that helps you use beautiful switchery controls WITHOUT any external JavaScript dependency. Number of customizations are available to suit your needs including colors, sizes, labels & positioning.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Supported by all modern browsers: Chrome, Firefox, Opera, Safari, Edge, IE9+
 
-## Code scaffolding
+![Preview](https://i.imgur.com/iJWeY23.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[Live Preview](https://zainzafar90.github.io/angular-switchery-ios/)
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+To install this library, run:
 
-## Running unit tests
+```bash
+$ npm install angular-switchery-ios --save
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Consuming your library
 
-## Running end-to-end tests
+You can import library in Angular `AppModule` by the following method:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```typescript
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-## Further help
+import { AppComponent } from "./app.component";
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+import { NgSwitcheryModule } from "angular-switchery-ios";
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+
+    // Specify your library as an import
+    NgSwitcheryModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+
+Once your library is imported, you can use Switchery in your Angular application:
+
+## Usage
+
+## Settings and Defaults
+
+* `enable` : turn switch on or off (boolean value)
+* `color` : color of the switch element (default is primary, switchery-info, switchery-success, switchery-warning, switchery-danger)
+* `size` : size of the switch element (switchery-lg, switchery-sm, switchery-xs)
+* `disabled` : you can enable/disable states the state of the switch by adding disabled property (boolean value)
+* `onLabel` : specify label for your switch
+* `offLabel` : specify label for your switch
+* `sticked` : position your switch to stick to right (boolean value)
+
+## Examples
+
+## Checked
+
+You only need to add `enable` property to your control
+
+```html
+ <!-- Default Switch -->
+  <ng-switchery [enable]="value"></ng-switchery>
+```
+
+## Disable
+
+You can enable/disable states by adding disabled (boolean) property
+
+```html
+<!-- Checked Disabled -->
+<ng-switchery [enable]="true" [disabled]="true" onLabel="Checked Disabled"></ng-switchery>
+
+<!-- Unchecked Disabled -->
+<ng-switchery [enable]="false" [disabled]="true" onLabel="Unchecked Disabled"></ng-switchery>
+```
+
+## Colored
+
+You can change the default color of the switch to fit your design perfectly. According to the color system, any of its color can be applied to the switchery.
+
+```html
+<!-- No class specified -->
+  <ng-switchery [enable]="true" onLabel="Checked in Primary"></ng-switchery>
+
+  <!-- color = switchery-info -->
+  <ng-switchery [enable]="true" onLabel="Checked in Info" color="switchery-info"></ng-switchery>
+
+  <!-- color = switchery-success -->
+  <ng-switchery [enable]="true" onLabel="Checked in Success" color="switchery-success"></ng-switchery>
+
+  <!-- color = switchery-warning -->
+  <ng-switchery [enable]="true" onLabel="Checked in Warning" color="switchery-warning"></ng-switchery>
+
+  <!-- color = switchery-danger -->
+  <ng-switchery [enable]="true" onLabel="Checked in Danger" color="switchery-danger"></ng-switchery>
+```
+
+## Sized
+
+You can choose one of 4 main Switch sizes - large ( .switchery-lg), default, small ( .switchery-sm) and mini ( .switchery-xs). Just add proper size as input.
+
+```html
+<!-- size = switchery-lg -->
+  <ng-switchery [enable]="true" onLabel="Large in size" size="switchery-lg"></ng-switchery>
+
+  <!-- No size specified -->
+  <ng-switchery [enable]="true" onLabel="Default in size"></ng-switchery>
+
+  <!-- size = switchery-sm -->
+  <ng-switchery [enable]="true" onLabel="Small in size" size="switchery-sm"></ng-switchery>
+
+  <!-- size = switchery-xs -->
+  <ng-switchery [enable]="true" onLabel="Mini in size" size="switchery-xs"></ng-switchery>
+```
+
+## Labels
+
+Switchery can be used with single label or with multiple labels. For single label use onLabel="Single Label", for double specify an extra property offLabel="Double Label"
+
+```html
+<!-- Specify onLabel  -->
+<ng-switchery [enable]="true" onLabel="Single Label Switch" ></ng-switchery>
+
+<!-- Specify both onLabel & offLabel -->
+<ng-switchery [enable]="true" onLabel="Option 1" offLabel="Option 2"></ng-switchery>
+```
+
+## Right Sticked
+
+Sometimes it's very useful to have switches on the right side of the container. Just add [sticked]="true" to the Switchery
+
+```html
+<!-- Set sticked = true -->
+<ng-switchery [enable]="true" onLabel="Option 1" sticked="true"></ng-switchery>
+```
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT) © [Zain Zafar](mailto:zainzafar90@gmail.com)
