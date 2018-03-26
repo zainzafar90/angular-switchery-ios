@@ -34,7 +34,7 @@ export class NgSwitcheryComponent implements OnInit {
   @Input() sticked?: boolean;
   @Input() customClasses?: string;
 
-  @Output() enableChange = new EventEmitter();
+  @Output() checkedChange = new EventEmitter();
 
   constructor() {}
 
@@ -42,6 +42,6 @@ export class NgSwitcheryComponent implements OnInit {
 
   change(event) {
     this.checked = event;
-    this.enableChange.emit(event);
+    this.checkedChange.emit(event);
   }
 }
