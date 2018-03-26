@@ -87,19 +87,19 @@ You can change the default color of the switch to fit your design perfectly. Acc
 
 ```html
 <!-- No class specified -->
-  <ng-switchery [checked]="true" onLabel="Checked in Primary"></ng-switchery>
+<ng-switchery [checked]="true" onLabel="Checked in Primary"></ng-switchery>
 
-  <!-- color = switchery-info -->
-  <ng-switchery [checked]="true" onLabel="Checked in Info" color="switchery-info"></ng-switchery>
+<!-- color = switchery-info -->
+<ng-switchery [checked]="true" onLabel="Checked in Info" color="switchery-info"></ng-switchery>
 
-  <!-- color = switchery-success -->
-  <ng-switchery [checked]="true" onLabel="Checked in Success" color="switchery-success"></ng-switchery>
+<!-- color = switchery-success -->
+<ng-switchery [checked]="true" onLabel="Checked in Success" color="switchery-success"></ng-switchery>
 
-  <!-- color = switchery-warning -->
-  <ng-switchery [checked]="true" onLabel="Checked in Warning" color="switchery-warning"></ng-switchery>
+<!-- color = switchery-warning -->
+<ng-switchery [checked]="true" onLabel="Checked in Warning" color="switchery-warning"></ng-switchery>
 
-  <!-- color = switchery-danger -->
-  <ng-switchery [checked]="true" onLabel="Checked in Danger" color="switchery-danger"></ng-switchery>
+<!-- color = switchery-danger -->
+<ng-switchery [checked]="true" onLabel="Checked in Danger" color="switchery-danger"></ng-switchery>
 ```
 
 ## Sized
@@ -108,16 +108,16 @@ You can choose one of 4 main Switch sizes - large ( .switchery-lg), default, sma
 
 ```html
 <!-- size = switchery-lg -->
-  <ng-switchery [checked]="true" onLabel="Large in size" size="switchery-lg"></ng-switchery>
+<ng-switchery [checked]="true" onLabel="Large in size" size="switchery-lg"></ng-switchery>
 
-  <!-- No size specified -->
-  <ng-switchery [checked]="true" onLabel="Default in size"></ng-switchery>
+<!-- No size specified -->
+<ng-switchery [checked]="true" onLabel="Default in size"></ng-switchery>
 
-  <!-- size = switchery-sm -->
-  <ng-switchery [checked]="true" onLabel="Small in size" size="switchery-sm"></ng-switchery>
+<!-- size = switchery-sm -->
+<ng-switchery [checked]="true" onLabel="Small in size" size="switchery-sm"></ng-switchery>
 
-  <!-- size = switchery-xs -->
-  <ng-switchery [checked]="true" onLabel="Mini in size" size="switchery-xs"></ng-switchery>
+<!-- size = switchery-xs -->
+<ng-switchery [checked]="true" onLabel="Mini in size" size="switchery-xs"></ng-switchery>
 ```
 
 ## Labels
