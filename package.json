@@ -15,6 +15,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand",
+    "version": "npm version patch -m \"Upgrade to %s for modifying README.md \"",
     "demo": "cd demo && npm run build-prod && cd..",
     "deploy": "ngh --dir=\"demo/dist\""
   },
