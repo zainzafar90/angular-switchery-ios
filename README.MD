@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/zainzafar90/angular-switchery-ios.svg?branch=master)](https://travis-ci.org/zainzafar90/angular-switchery-ios)
+
 # angular-switchery-ios
 
 ## Description
