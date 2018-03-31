@@ -1,6 +1,10 @@
+# Angular Switchery IOS
+
 [![Build Status](https://travis-ci.org/zainzafar90/angular-switchery-ios.svg?branch=master)](https://travis-ci.org/zainzafar90/angular-switchery-ios)
 
-# Angular Switchery IOS
+[![npm version](https://badge.fury.io/js/angular-switchery-ios.svg)](https://badge.fury.io/js/angular-switchery-ios)
+
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/zainzafar90/angular-switchery-ios/blob/master/LICENSE)
 
 ## Description
 
