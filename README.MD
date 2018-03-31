@@ -8,7 +8,7 @@ This package is an angular based component that helps you use beautiful switcher
 
 Supported by all modern browsers: Chrome, Firefox, Opera, Safari, Edge, IE9+
 
-![Preview](https://i.imgur.com/iJWeY23.png)
+![Preview](https://zainzafar90.github.io/angular-switchery-ios/)
 
 [Live Preview](https://zainzafar90.github.io/angular-switchery-ios/)
 
