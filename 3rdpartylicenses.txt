@@ -122,7 +122,7 @@ MIT
 MIT
 MIT
 
-angular-switchery-ios@0.1.7
+angular-switchery-ios@1.0.0
 MIT
 MIT
 
