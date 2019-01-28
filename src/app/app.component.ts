@@ -7,6 +7,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  value = true;
   truthyValue = true;
   falsyValue = false;
 
