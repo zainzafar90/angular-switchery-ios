@@ -8,6 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "build:lib": "ng build angular-switchery-ios",
     "publish": "npm publish ./dist/angular-switchery-ios",
     "version": "npm version patch -m \"Upgrade to %s\"",
     "deploy": "ngh --dir=\"demo/dist\""
