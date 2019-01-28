@@ -9,9 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:lib": "ng build angular-switchery-ios",
+    "deploy": "ngh --dir=\"/dist/angular-switchery-ios-demo\"",
     "publish": "npm publish ./dist/angular-switchery-ios",
-    "version": "npm version patch -m \"Upgrade to %s\"",
-    "deploy": "ngh --dir=\"demo/dist\""
+    "version": "npm version patch -m \"Upgrade to %s\""
   },
   "dependencies": {
     "@angular/animations": "~7.0.0",
