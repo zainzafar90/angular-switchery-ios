@@ -1,0 +1,339 @@
+<app-header></app-header>
+
+<div class="container">
+  <div class="content">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <a
+          href="https://www.npmjs.com/package/angular-switchery-ios"
+          target="_blank"
+          class="btn btn-xl btn-danger mr-2"
+          >NPM</a
+        >
+        <a
+          href="https://github.com/zainzafar90/angular-switchery-ios"
+          target="_blank"
+          class="btn btn-xl btn-dark"
+          >Github</a
+        >
+      </div>
+      <div class="col-md-12 mt-4">
+        <h1>How to use Angular IOS Toggle Switch</h1>
+
+        <p>
+          Toggle Switch for Angular by
+          <a href="https://github.com/zainzafar90" target="_blank">
+            <b>Zain Zafar</b> </a
+          >.
+        </p>
+
+        <br />
+        <br />
+        <h2>Installation</h2>
+
+        <pre data-title="bash">
+            <code class="language-bash" >
+              <span [innerHTML]="code0"></span>
+            </code>
+        </pre>
+
+        <p>
+          and then from your Angular
+          <code class="code">AppModule</code>:
+        </p>
+
+        <pre data-title="typescript">
+          <code class="language-javascript" >
+            <span [innerHTML]="code1"></span>
+          </code>
+      </pre>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content-group-lg">
+              <br />
+              <br />
+              <h2>Usage</h2>
+
+              <!-- Template Driven Forms Section -->
+              <section>
+                <h3>Switchery with Template Driven Forms</h3>
+
+                <h6>Code</h6>
+
+                <pre data-title="html">
+                  <code class="language-html">
+                    <span [innerHTML]="code2a"></span>
+                  </code>
+                </pre>
+
+                <h6 class="mb-0">Demo</h6>
+                <form #form="ngForm">
+                  <ng-switchery
+                    [(ngModel)]="value"
+                    name="switchery-check"
+                  ></ng-switchery>
+                </form>
+
+                <p>
+                  Switch Value:
+                  <code class="code"> {{ value | json }}</code>
+                </p>
+                <br />
+                <br />
+              </section>
+              <!--/ Template Driven Forms Section -->
+
+              <!-- Reactive Forms Section -->
+              <section>
+                <h3>Switchery with Reactive Forms</h3>
+
+                <h6>Code</h6>
+
+                <pre data-title="html">
+                  <code class="language-html">
+                    <span [innerHTML]="code2b"></span>
+                  </code>
+                </pre>
+
+                <h6 class="mb-0">Demo</h6>
+                <form [formGroup]="reactiveForm">
+                  <ng-switchery formControlName="value"></ng-switchery>
+                </form>
+
+                <p>Switch Value:</p>
+                <pre>{{ reactiveForm.value | json }}</pre>
+
+                <br />
+                <br />
+              </section>
+              <!--/ Reactive Forms Section -->
+
+              <!-- Switchery Label Section -->
+              <section>
+                <h3>Switchery with different states</h3>
+
+                <pre data-title="html">
+                    <code class="language-html">
+                      <span [innerHTML]="code3"></span>
+                    </code>
+                </pre>
+
+                <p>
+                  You can enable/disable states by adding
+                  <code>disabled</code> property and specifying appropriate
+                  value to switchery control
+                </p>
+
+                <h6>Demo</h6>
+
+                <!-- Checked Switch -->
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Checked Switch'"
+                ></ng-switchery>
+
+                <!-- Unchecked Switch -->
+                <ng-switchery
+                  [(ngModel)]="falsyValue"
+                  [onLabel]="'Unchecked Switch'"
+                ></ng-switchery>
+
+                <!-- Checked Disabled -->
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [disabled]="true"
+                  [onLabel]="'Checked Disabled'"
+                ></ng-switchery>
+
+                <!-- Unchecked Disabled -->
+                <ng-switchery
+                  [(ngModel)]="falsyValue"
+                  [disabled]="true"
+                  [onLabel]="'Unchecked Disabled'"
+                ></ng-switchery>
+
+                <br />
+                <br />
+              </section>
+              <!--/ Switchery Label Section -->
+
+              <!-- Switchery Colors Section -->
+              <section>
+                <h3>Switchery colors</h3>
+
+                <h6>Code</h6>
+
+                <pre data-title="html">
+                  <code class="language-html">
+                    <span [innerHTML]="code4"></span>
+                  </code>
+                </pre>
+
+                <p>
+                  You can change the default color of the switch to fit your
+                  design perfectly. According to the color system, any of its
+                  color can be applied to the switchery.
+                </p>
+
+                <h6>Demo</h6>
+
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Checked in Primary'"
+                ></ng-switchery>
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Checked in Info'"
+                  color="switchery-info"
+                ></ng-switchery>
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Checked in Success'"
+                  color="switchery-success"
+                ></ng-switchery>
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Checked in Warning'"
+                  color="switchery-warning"
+                ></ng-switchery>
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Checked in Danger'"
+                  color="switchery-danger"
+                ></ng-switchery>
+
+                <br />
+                <br />
+              </section>
+              <!--/ Switchery Colors Section -->
+
+              <!-- Switchery Sizes Section -->
+              <section>
+                <h3>Switchery Sizes</h3>
+
+                <h6>Code</h6>
+
+                <pre data-title="html">
+                  <code class="language-html">
+                    <span [innerHTML]="code5"></span>
+                  </code>
+                </pre>
+
+                <p>
+                  You can choose one of 4 main Switch sizes - large (
+                  <code>.switchery-lg</code>), default, small (
+                  <code>.switchery-sm</code>) and mini (
+                  <code>.switchery-xs</code>). Just add proper size as input.
+                </p>
+
+                <h6>Demo</h6>
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Large in size'"
+                  size="switchery-lg"
+                ></ng-switchery>
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Default in size'"
+                ></ng-switchery>
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Small in size'"
+                  size="switchery-sm"
+                ></ng-switchery>
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Mini in size'"
+                  size="switchery-xs"
+                ></ng-switchery>
+
+                <br />
+                <br />
+              </section>
+              <!--/ Switchery Sizes Section -->
+
+              <!-- Switchery Double Label Section -->
+              <section>
+                <h3>Switchery Label</h3>
+
+                <h6>Code</h6>
+
+                <pre data-title="html">
+                  <code class="language-html">
+                    <span [innerHTML]="code6"></span>
+                  </code>
+                </pre>
+
+                <p>
+                  Switchery can be used with single label or with multiple
+                  labels. For single label use
+                  <code>[onLabel]="Single Label"</code>, for double specify an
+                  extra property
+                  <code>offLabel="Double Label"</code>
+                </p>
+
+                <h6>Demo</h6>
+                <!-- Double Label Switch -->
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Single Label Switch'"
+                ></ng-switchery>
+
+                <!-- Double Label Switch -->
+                <ng-switchery
+                  [(ngModel)]="truthyValue"
+                  [onLabel]="'Option 1'"
+                  offLabel="Option 2"
+                ></ng-switchery>
+
+                <br />
+                <br />
+              </section>
+              <!--/ Switchery Double Label Section -->
+
+              <!-- Switchery Sticked Right Section -->
+              <section>
+                <h3>Switchery sticked to right</h3>
+
+                <h6>Code</h6>
+
+                <pre data-title="html">
+                  <code class="language-html">
+                    <span [innerHTML]="code7"></span>
+                  </code>
+                </pre>
+
+                <p>
+                  Sometimes it's very useful to have switches on the right side
+                  of the container. Just add
+                  <code>[sticked]="true"</code> to the Switchery
+                </p>
+
+                <h6>Demo</h6>
+
+                <div class="bg-light d-block rounded p-1">
+                  <ng-switchery
+                    [(ngModel)]="truthyValue"
+                    [onLabel]="'Option 1'"
+                    [sticked]="true"
+                  ></ng-switchery>
+                </div>
+
+                <br />
+                <br />
+              </section>
+              <!--/ Switchery Sticked Right Section -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./content -->
+    </div>
+    <!-- ./col-md-12 -->
+  </div>
+  <!-- ./row -->
+</div>
+<!-- ./container -->
+
+<app-footer></app-footer>

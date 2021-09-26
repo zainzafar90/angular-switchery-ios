@@ -1,0 +1,188 @@
+.checkbox {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox label {
+  padding-left: 0;
+}
+
+.switchery {
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  width: 44px;
+  position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  vertical-align: middle;
+}
+
+.switchery,
+.switchery > small {
+  background-color: #fff;
+  height: 22px;
+}
+
+input + .switchery {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(223, 223, 223);
+  box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset;
+  transition: border 0.4s, box-shadow 0.4s;
+  margin-right: 7px;
+}
+
+input:checked + .switchery {
+  background-color: rgb(33, 150, 243);
+  border-color: rgb(33, 150, 243);
+  box-shadow: rgb(33, 150, 243) 0px 0px 0px 12px inset;
+  transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+}
+
+.checkbox-double .switchery {
+  position: relative;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.switchery > small {
+  background-color: #fff;
+  border-radius: 100px;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.4s, left 0.2s;
+}
+
+input:checked + .switchery > small {
+  left: 22px;
+  transition: background-color 0.4s, left 0.2s;
+  background-color: rgb(255, 255, 255);
+}
+
+/* LARGE - LG */
+
+input:checked + .switchery.switchery-lg > small {
+  left: 26px;
+}
+
+.switchery.switchery-lg {
+  margin-top: -4px;
+  height: 26px;
+  width: 52px;
+}
+
+.switchery-lg small {
+  height: 26px;
+  width: 26px;
+}
+
+/* SMALL - SM */
+
+input:checked + .switchery.switchery-sm > small {
+  left: 18px;
+}
+
+.switchery.switchery-sm {
+  margin-top: 0;
+  height: 18px;
+  width: 36px;
+}
+
+.switchery-sm small {
+  height: 18px;
+  width: 18px;
+}
+
+/* EXTRA SMALL - XS */
+
+input:checked + .switchery.switchery-xs > small {
+  left: 14px;
+}
+
+.switchery.switchery-xs {
+  margin-top: 2px;
+  height: 14px;
+  width: 28px;
+}
+
+.switchery-xs small {
+  height: 14px;
+  width: 14px;
+}
+
+/* DISABLED */
+
+.disabled .switchery {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Primary */
+
+input:checked + .switchery-primary {
+  background-color: rgb(33, 150, 243);
+  border-color: rgb(33, 150, 243);
+  box-shadow: rgb(33, 150, 243) 0px 0px 0px 12px inset;
+  transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+}
+
+/* Info */
+
+input:checked + .switchery-info {
+  background-color: rgb(0, 188, 212);
+  border-color: rgb(0, 188, 212);
+  box-shadow: rgb(0, 188, 212) 0px 0px 0px 12px inset;
+  transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+}
+
+/* Success */
+
+input:checked + .switchery-success {
+  background-color: rgb(100, 189, 99);
+  border-color: rgb(100, 189, 99);
+  box-shadow: rgb(100, 189, 99) 0px 0px 0px 12px inset;
+  transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+}
+
+/* Warning */
+
+input:checked + .switchery-warning {
+  background-color: rgb(255, 112, 67);
+  border-color: rgb(255, 112, 67);
+  box-shadow: rgb(255, 112, 67) 0px 0px 0px 12px inset;
+  transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+}
+
+/* Danger */
+
+input:checked + .switchery-danger {
+  background-color: rgb(239, 83, 80);
+  border-color: rgb(239, 83, 80);
+  box-shadow: rgb(239, 83, 80) 0px 0px 0px 12px inset;
+  transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+}
+
+/* Full Width Switch - Right Aligned */
+
+.checkbox.checkbox-right label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox.checkbox-right .switchery {
+  position: absolute;
+  left: auto;
+  right: 0;
+}
