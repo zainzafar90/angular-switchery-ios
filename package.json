@@ -8,7 +8,7 @@
     "build:lib": "ng build ng-switchery-ios",
     "deploy": "npx angular-cli-ghpages --dir=dist/demo",
     "publish": "npm publish ./dist/angular-switchery-ios",
-    "version": "npm version patch -m \"Upgrade to %s\" && cd ng-switchery-ios && npm version patch -m \"Upgrade to %s\" && cd ../",
+    "version": "npm version patch && cd ng-switchery-ios && npm version patch && cd ../",
     "watch": "ng build --watch --configuration development"
   },
   "dependencies": {
