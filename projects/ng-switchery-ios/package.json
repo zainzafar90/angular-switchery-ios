@@ -1,6 +1,6 @@
 {
   "name": "angular-switchery-ios",
-  "version": "2.9.9",
+  "version": "2.9.12",
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0"

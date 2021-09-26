@@ -1,14 +1,14 @@
 {
   "name": "angular-switchery-ios",
-  "version": "2.9.11",
+  "version": "2.9.12",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href=\"https://zainzafar90.github.io/angular-switchery-ios/\"",
+    "build": "ng build demo",
     "build:lib": "ng build ng-switchery-ios",
-    "deploy": "ngh --dir=\"/dist/demo\"",
+    "deploy": "ng deploy https://zainzafar90.github.io/angular-switchery-ios --base-href=\"https://zainzafar90.github.io/angular-switchery-ios/\"",
     "publish": "npm publish ./dist/angular-switchery-ios",
-    "version": "npm version patch -m \"Upgrade to %s\"",
+    "version": "cd ng-switchery-ios && npm version patch -m \"Upgrade to %s\" && cd ../",
     "watch": "ng build --watch --configuration development"
   },
   "dependencies": {
@@ -30,6 +30,7 @@
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.0-rc.2",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
