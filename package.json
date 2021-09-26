@@ -1,6 +1,6 @@
 {
   "name": "angular-switchery-ios",
-  "version": "2.9.12",
+  "version": "2.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,7 @@
     "build:lib": "ng build ng-switchery-ios",
     "deploy": "npx angular-cli-ghpages --dir=dist/demo",
     "publish": "npm publish ./dist/angular-switchery-ios",
-    "version": "npm version patch && cd ng-switchery-ios && npm version patch && cd ../",
+    "version": "cd ng-switchery-ios && npm version patch && cd ../",
     "watch": "ng build --watch --configuration development"
   },
   "dependencies": {
