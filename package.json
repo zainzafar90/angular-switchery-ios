@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build demo",
+    "build": "ng build demo --base-href=\"https://zainzafar90.github.io/angular-switchery-ios/\"",
     "build:lib": "ng build ng-switchery-ios",
-    "deploy": "ng deploy https://github.com/zainzafar90/angular-switchery-ios --base-href=\"https://zainzafar90.github.io/angular-switchery-ios/\"",
+    "deploy": "npx angular-cli-ghpages --dir=dist/demo",
     "publish": "npm publish ./dist/angular-switchery-ios",
-    "version": "cd ng-switchery-ios && npm version patch -m \"Upgrade to %s\" && cd ../",
+    "version": "npm version patch -m \"Upgrade to %s\" && cd ng-switchery-ios && npm version patch -m \"Upgrade to %s\" && cd ../",
     "watch": "ng build --watch --configuration development"
   },
   "dependencies": {
